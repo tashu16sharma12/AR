@@ -20,28 +20,31 @@ public class RotateObject : MonoBehaviour
 
     private void HandleRotationInput()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.touchCount == 1)
         {
-            isRotating = true;
-            rotateStartPosition = Input.mousePosition;
-        }
-        if (isRotating && Input.GetMouseButton(0))
-        {
-            rotateCurrentPosition = Input.mousePosition;
+            Touch touch = Input.GetTouch(0);
 
-            Vector3 difference = rotateStartPosition - rotateCurrentPosition;
+            if (touch.phase == TouchPhase.Began)
+            {
+                isRotating = true;
+                rotateStartPosition = touch.position;
+            }
+            else if (isRotating && touch.phase == TouchPhase.Moved)
+            {
+                rotateCurrentPosition = touch.position;
 
-            rotateStartPosition = rotateCurrentPosition;
+                Vector3 difference = rotateStartPosition - rotateCurrentPosition;
+                rotateStartPosition = rotateCurrentPosition;
 
-            Vector3 rotationEulerAngles = newRotation.eulerAngles;
+                Vector3 rotationEulerAngles = newRotation.eulerAngles;
+                rotationEulerAngles += Vector3.up * (difference.x / 5f) * rotationAmount;
 
-            rotationEulerAngles = newRotation.eulerAngles + (Vector3.up * (difference.x / 5f) * rotationAmount);
-
-            newRotation = Quaternion.Euler(rotationEulerAngles);
-        }
-        if (isRotating && Input.GetMouseButtonUp(1))
-        {
-            isRotating = false;
+                newRotation = Quaternion.Euler(rotationEulerAngles);
+            }
+            else if (isRotating && (touch.phase == TouchPhase.Ended || touch.phase == TouchPhase.Canceled))
+            {
+                isRotating = false;
+            }
         }
     }
 }

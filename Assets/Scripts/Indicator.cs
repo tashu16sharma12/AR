@@ -8,9 +8,17 @@ public class Indicator : MonoBehaviour
 {
     [SerializeField] ARRaycastManager raycastManager;
     [SerializeField] GameObject indicator;
-    [SerializeField] float doubleTapThreshold;
-    [SerializeField] Transform prefab;
     List<ARRaycastHit> hits = new List<ARRaycastHit>();
+
+    public Vector3 Pos
+    {
+        get => indicator.transform.position;
+    }
+
+    public Quaternion Rot
+    {
+        get => indicator.transform.rotation;
+    }
 
     void Start()
     {
@@ -20,14 +28,19 @@ public class Indicator : MonoBehaviour
 
     void Update()
     {
+        PlaceIndicator();
+    }
+
+    void PlaceIndicator()
+    {
         var ray = new Vector2(Screen.width / 2, Screen.height / 2);
 
-        if(raycastManager.Raycast(ray, hits, TrackableType.Planes))
+        if (raycastManager.Raycast(ray, hits, TrackableType.Planes))
         {
             Pose hitPose = hits[0].pose;
             indicator.transform.position = hitPose.position;
 
-            if(!indicator.activeSelf)
+            if (!indicator.activeSelf)
             {
                 indicator.SetActive(true);
             }
@@ -40,32 +53,15 @@ public class Indicator : MonoBehaviour
                 indicator.SetActive(false);
             }
         }
-
-        if (IsDoubleTap())
-        {
-            Transform Obj = Instantiate(prefab, indicator.transform.position, indicator.transform.rotation);
-            Obj.GetComponent<RotateObject>().newRotation = indicator.transform.rotation;
-        }
     }
 
-    float lastTapTime = 0f;
-    bool IsDoubleTap()
+    public void Disable()
     {
-        bool tap = false;
+        gameObject.SetActive(false);
+    }
 
-        if (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Began)
-        {
-            float currentTime = Time.time;
-
-            if (currentTime - lastTapTime <= doubleTapThreshold)
-            {
-                Debug.Log("Double Tap Detected!");
-                tap = true;
-            }
-
-            lastTapTime = currentTime;
-        }
-
-        return tap;
+    public void Enable()
+    {
+        gameObject.SetActive(true);
     }
 }
