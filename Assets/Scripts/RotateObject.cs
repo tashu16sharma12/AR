@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class RotateObject : MonoBehaviour
 {
@@ -20,6 +21,11 @@ public class RotateObject : MonoBehaviour
 
     private void HandleRotationInput()
     {
+        if(!EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
+        }
+
         if (Input.touchCount == 1)
         {
             Touch touch = Input.GetTouch(0);

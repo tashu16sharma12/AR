@@ -42187,6 +42187,7 @@ GameObject:
   - component: {fileID: 4237664216308782072}
   - component: {fileID: 1295032793971299307}
   - component: {fileID: 6815157227722713284}
+  - component: {fileID: -2062171038747198031}
   m_Layer: 0
   m_Name: GMA T50
   m_TagString: Untagged
@@ -42240,6 +42241,64 @@ MonoBehaviour:
   movementTime: 10
   rotationAmount: 1
   newRotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &-2062171038747198031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8403404309833184358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ce1edf7ce363345a3e2fdfd5432a13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animations:
+  - AnimName: Front Bonnet
+    AnimIcon: {fileID: 2800000, guid: 1aedbc8f9bf07034592e88d9a3f33c82, type: 3}
+    Animations:
+    - {fileID: 239262413836706480}
+  - AnimName: Doors
+    AnimIcon: {fileID: 2800000, guid: dd8fae0a7586a374aab9bf92882adf77, type: 3}
+    Animations:
+    - {fileID: 3084342695311894445}
+    - {fileID: 1629664025494870101}
+  - AnimName: Back Bonnet
+    AnimIcon: {fileID: 2800000, guid: 1d98b192b6adc014fb626d48bf146179, type: 3}
+    Animations:
+    - {fileID: 9212221644898931982}
+    - {fileID: 4823301374697637079}
+  paints:
+  - PaintName: Silver
+    PaintIcon: {fileID: 2800000, guid: 40be926b918d2644baa031bc3551a33b, type: 3}
+    PaintColor: {r: 0.7529412, g: 0.7529412, b: 0.7529412, a: 1}
+    Materials:
+    - {fileID: 2100000, guid: bda44287f33c54294938d8ffa2ff32df, type: 2}
+  - PaintName: Orange
+    PaintIcon: {fileID: 2800000, guid: 9d20eb09ce698514a90b4b34c3823da8, type: 3}
+    PaintColor: {r: 1, g: 0.54901963, b: 0, a: 1}
+    Materials:
+    - {fileID: 2100000, guid: bda44287f33c54294938d8ffa2ff32df, type: 2}
+  - PaintName: Metallic Red
+    PaintIcon: {fileID: 2800000, guid: af795e533f59d964bbcc4149203bfe15, type: 3}
+    PaintColor: {r: 0.54509807, g: 0, b: 0, a: 1}
+    Materials:
+    - {fileID: 2100000, guid: bda44287f33c54294938d8ffa2ff32df, type: 2}
+  - PaintName: Metallic Blue
+    PaintIcon: {fileID: 2800000, guid: c75befbcd56e90d4c8e4b6925549adb3, type: 3}
+    PaintColor: {r: 0.11764706, g: 0.22745098, b: 0.37254903, a: 1}
+    Materials:
+    - {fileID: 2100000, guid: bda44287f33c54294938d8ffa2ff32df, type: 2}
+  - PaintName: Light Blue
+    PaintIcon: {fileID: 2800000, guid: e212069bbf110154f84c515e7c45164c, type: 3}
+    PaintColor: {r: 0.6784314, g: 0.84705883, b: 0.9019608, a: 1}
+    Materials:
+    - {fileID: 2100000, guid: bda44287f33c54294938d8ffa2ff32df, type: 2}
+  - PaintName: Dark Green
+    PaintIcon: {fileID: 2800000, guid: 54e7481b42f758840abe241717775607, type: 3}
+    PaintColor: {r: 0, g: 0.39215687, b: 0, a: 1}
+    Materials:
+    - {fileID: 2100000, guid: bda44287f33c54294938d8ffa2ff32df, type: 2}
 --- !u!1 &8412656439093979876
 GameObject:
   m_ObjectHideFlags: 0

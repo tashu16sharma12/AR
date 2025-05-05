@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private GameManager instance;
-    public GameManager Instance
+    private static GameManager instance;
+    public static GameManager Instance
     {
         get
         {
@@ -22,15 +22,22 @@ public class GameManager : MonoBehaviour
     [SerializeField] Transform currentObj;
     [SerializeField] float doubleTapThreshold;
 
+    [SerializeField] AnimationPrefab animationPrefab;
+    [SerializeField] Transform animationContent;
+    [SerializeField] PaintPrefab paintPrefab;
+    [SerializeField] Transform paintContent;
+
     private void Update()
     {
-        if (IsDoubleTap())
+        if (IsDoubleTap() || Input.GetKeyDown(KeyCode.Space))
         {
             if(currentObj != null)
             {
                 Destroy(currentObj.gameObject);
             }
 
+            ClearTab(animationContent);
+            ClearTab(paintContent);
             currentObj = Instantiate(prefab, indicator.Pos, indicator.Rot);
             currentObj.GetComponent<RotateObject>().newRotation = indicator.Rot;
             backButton.SetActive(true);
@@ -57,6 +64,25 @@ public class GameManager : MonoBehaviour
         }
 
         return tap;
+    }
+
+    public void SetAnimations(AnimationData animationData)
+    {
+        Instantiate(animationPrefab, animationContent).SetData(animationData);
+    }
+
+    public void SetPaints(PaintData paint)
+    {
+        Instantiate(paintPrefab, paintContent).SetData(paint);
+    }
+
+    void ClearTab(Transform trans)
+    {
+        if (trans.childCount < 1) return;
+        foreach(Transform item in trans)
+        {
+            Destroy(item.gameObject);
+        }
     }
 
     public void OnClickBack()
