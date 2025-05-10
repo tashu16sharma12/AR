@@ -21,7 +21,7 @@ public class RotateObject : MonoBehaviour
 
     private void HandleRotationInput()
     {
-        if(!EventSystem.current.IsPointerOverGameObject())
+        if(EventSystem.current.IsPointerOverGameObject())
         {
             return;
         }

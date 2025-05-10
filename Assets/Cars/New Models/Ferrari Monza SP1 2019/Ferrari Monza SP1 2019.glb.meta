@@ -1,0 +1,247 @@
+fileFormatVersion: 2
+guid: d96f29a71fa4f45e89a78a39384ebf6f
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ferrari_MonzaReward_2019BadgeA_Material
+    second: {fileID: 2100000, guid: 2aaf7c54e8d6d4655874f0ba1aeab6ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ferrari_MonzaReward_2019Base_Material
+    second: {fileID: 2100000, guid: 082dfdd4d339b4197843fc164b78edb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ferrari_MonzaReward_2019CalliperGloss_Material
+    second: {fileID: 2100000, guid: 707c0974ebc60449d9c23fd1b94bb0eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ferrari_MonzaReward_2019Carbon2_Material
+    second: {fileID: 2100000, guid: f457dddcc76594bf288a0c8911a1a8a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ferrari_MonzaReward_2019Coloured_Material
+    second: {fileID: 2100000, guid: bc6549acedd184eb1adab743d86ea592, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ferrari_MonzaReward_2019EngineA_Material
+    second: {fileID: 2100000, guid: a8154c7739d28410fb61d63483c4d419, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ferrari_MonzaReward_2019Grille1A_Material
+    second: {fileID: 2100000, guid: d56d11ed630af4d1583cbab4f1da2cee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ferrari_MonzaReward_2019Grille2A_Material
+    second: {fileID: 2100000, guid: 9031e8a078b3c4c23a8a94c4ad1962a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ferrari_MonzaReward_2019Grille3A_Material
+    second: {fileID: 2100000, guid: 39d0c1d111d8448f29dc92d8f6603d5e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ferrari_MonzaReward_2019Grille4A_Material
+    second: {fileID: 2100000, guid: 10931dd808cea41c1a7be56642f4aed3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ferrari_MonzaReward_2019Grille5A_Material
+    second: {fileID: 2100000, guid: 24a26d4a8c49945c09ba5a671dfd059e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ferrari_MonzaReward_2019InteriorA_Material
+    second: {fileID: 2100000, guid: a779dda81df3b4a5a9153143fc916e45, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ferrari_MonzaReward_2019InteriorTillingA_Material
+    second: {fileID: 2100000, guid: cdd33dac47743419b94b681eec70a801, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ferrari_MonzaReward_2019LicensePlateDefaultA_Material
+    second: {fileID: 2100000, guid: 22cf9f6abb29b410f9918cded32d7e58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ferrari_MonzaReward_2019LightA_Material
+    second: {fileID: 2100000, guid: 9ab8ec513b40a466487fc4134a2f44c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ferrari_MonzaReward_2019LightEmissiveA_Material
+    second: {fileID: 2100000, guid: ee4561c4503584a84948d4ced18a3a6b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ferrari_MonzaReward_2019ManufacturerPlateA_Material
+    second: {fileID: 2100000, guid: 59a879a3930c64768913b871c375c4ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ferrari_MonzaReward_2019Paint_Material
+    second: {fileID: 2100000, guid: 0d045187cdf6741bca415dd5e2dbb7fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ferrari_MonzaReward_2019SeatBelt_Material
+    second: {fileID: 2100000, guid: ce0d70b40a80a42808909ff3d3b3deb1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ferrari_MonzaReward_2019WindowInside_Material
+    second: {fileID: 2100000, guid: e624b437c52a04d6fa13047828a71214, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ferrari_MonzaReward_2019_Wheel1A_3D_3DWheel1A_Material
+    second: {fileID: 2100000, guid: 747acd13ce44a40d596e5ac2f1e2ee7b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong1
+    second: {fileID: 2100000, guid: 2886365a8f4bc47f99b1555d14229c19, type: 2}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: texture_0
+    second: {fileID: 2800000, guid: 97d930cf780264e5099c5ba0185a4e2a, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: texture_1
+    second: {fileID: 2800000, guid: 306c2d14ff5214da1965433c37b873ed, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: texture_10.normal
+    second: {fileID: 2800000, guid: 68723bded87fa4b08b6521568baba254, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: texture_11
+    second: {fileID: 2800000, guid: d125107789fc448399e05952409674e4, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: texture_12.normal
+    second: {fileID: 2800000, guid: d81e0bad365224eaa88d8e908ebf294f, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: texture_13
+    second: {fileID: 2800000, guid: f55cc7fc82fb44c07ae1c577eed37d8c, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: texture_14.normal
+    second: {fileID: 2800000, guid: 887c68a49e2bb4b479d876c9eb21221d, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: texture_15
+    second: {fileID: 2800000, guid: 2b6dbf80a4ab341a390729c33f619255, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: texture_16.normal
+    second: {fileID: 2800000, guid: 64fdecb27f6cc42a183c1a378acc3e0b, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: texture_17
+    second: {fileID: 2800000, guid: 04a2afee73cbe4691b53b8aa3619739d, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: texture_18.normal
+    second: {fileID: 2800000, guid: 4cd665a57e0c4466fb41fce37e6f3b9f, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: texture_19
+    second: {fileID: 2800000, guid: 025cc4e62ce474d02a54e2a9d9191c28, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: texture_2.normal
+    second: {fileID: 2800000, guid: 3b9f55f39a5234cbe80c31fe66b4a5eb, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: texture_20
+    second: {fileID: 2800000, guid: 7ddb3bad2e61a4933b2148ba84eea664, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: texture_21
+    second: {fileID: 2800000, guid: d3daa3e909fa44b308bed11f972d845e, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: texture_22
+    second: {fileID: 2800000, guid: 878ba559f49e348128b660554dd2fd3c, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: texture_23
+    second: {fileID: 2800000, guid: 2e5dbcbf8b587487c8492547d69b9a20, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: texture_24.normal
+    second: {fileID: 2800000, guid: 0e94739df56ef4a56ae71bb927feb42c, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: texture_3
+    second: {fileID: 2800000, guid: 809307f5b93184192849a3463c08034a, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: texture_4.normal
+    second: {fileID: 2800000, guid: 47d49d67ec1ed4312b84d42da072ac87, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: texture_5
+    second: {fileID: 2800000, guid: 1a25380c6df384fcb949dc836b61445d, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: texture_6.normal
+    second: {fileID: 2800000, guid: 4e819be46cd8044058354fb07ff073aa, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: texture_7
+    second: {fileID: 2800000, guid: 035c5e6a325074dffa0a61786769b825, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: texture_8.normal
+    second: {fileID: 2800000, guid: ba49e01a005af43558076b512c1600dd, type: 3}
+  - first:
+      type: UnityEngine:Texture
+      assembly: UnityEngine.CoreModule
+      name: texture_9
+    second: {fileID: 2800000, guid: 66391c832748248e8933c61537d3306d, type: 3}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: cc45016b844e7624dae3aec10fb443ea, type: 3}
+  reverseAxis: 0
+  renderPipeline: 0

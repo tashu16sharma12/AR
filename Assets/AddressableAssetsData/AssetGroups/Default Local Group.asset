@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_GUID: b7122296d06504e1390959263c2be801
+  m_SerializeEntries:
+  - m_GUID: 5958c633dc0004700a5a8b03fef8e79a
+    m_Address: Assets/Cars/New Prefab/Ferrari Monza SP1 2019.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6ff934a409ec5e9408b32a86990bf336
+    m_Address: Assets/Cars/New Prefab/GMA T50.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: d2497d901bec44476b17dd807c8d6a1e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 2abdfee60a3174366b2038914a44da0b, type: 2}
+    - {fileID: 11400000, guid: 6283f5fc8004c4878bfa2d548676f0e2, type: 2}

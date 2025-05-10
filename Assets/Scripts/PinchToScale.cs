@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PinchToScale : MonoBehaviour
 {
@@ -12,6 +13,10 @@ public class PinchToScale : MonoBehaviour
 
     void Update()
     {
+        if (EventSystem.current.IsPointerOverGameObject()) {
+            return;
+        }
+
         if (Input.touchCount == 2)
         {
             Touch touch0 = Input.GetTouch(0);

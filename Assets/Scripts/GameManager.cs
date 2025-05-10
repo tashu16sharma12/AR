@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class GameManager : MonoBehaviour
 {
@@ -17,7 +19,6 @@ public class GameManager : MonoBehaviour
     }
 
     [SerializeField] Indicator indicator;
-    [SerializeField] Transform prefab;
     [SerializeField] GameObject backButton;
     [SerializeField] Transform currentObj;
     [SerializeField] float doubleTapThreshold;
@@ -26,6 +27,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] Transform animationContent;
     [SerializeField] PaintPrefab paintPrefab;
     [SerializeField] Transform paintContent;
+    [SerializeField] AssetReferenceGameObject[] carsPrefabs;
+    int carInd;
 
     private void Update()
     {
@@ -38,10 +41,25 @@ public class GameManager : MonoBehaviour
 
             ClearTab(animationContent);
             ClearTab(paintContent);
-            currentObj = Instantiate(prefab, indicator.Pos, indicator.Rot);
-            currentObj.GetComponent<RotateObject>().newRotation = indicator.Rot;
+
+            LoadByIndex(0);
+
             backButton.SetActive(true);
             indicator.Disable();
+        }
+    }
+
+    void LoadByIndex(int ind)
+    {
+        carsPrefabs[ind].LoadAssetAsync().Completed += OnAddressableLoaded;
+    }
+
+    void OnAddressableLoaded(AsyncOperationHandle<GameObject> handle)
+    {
+        if(handle.Status == AsyncOperationStatus.Succeeded)
+        {
+            currentObj = Instantiate(handle.Result, indicator.Pos, indicator.Rot).transform;
+            currentObj.GetComponent<RotateObject>().newRotation = indicator.Rot;
         }
     }
 

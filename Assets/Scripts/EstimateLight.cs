@@ -4,7 +4,7 @@ using UnityEngine.XR.ARFoundation;
 public class EstimateLight : MonoBehaviour
 {
     [SerializeField] ARCameraManager cameraManager;
-    [SerializeField] Light dirLight;
+    [SerializeField] Light[] dirLight;
 
     private void OnEnable()
     {
@@ -18,10 +18,22 @@ public class EstimateLight : MonoBehaviour
 
     void GetLight(ARCameraFrameEventArgs args)
     {
-        if(args.lightEstimation.mainLightColor.HasValue)
+        foreach(Light item in dirLight)
         {
-            dirLight.color = args.lightEstimation.mainLightColor.Value;
-            // float averageBrightness = 0.2126f * dirLight.color.r + 0.7152f * dirLight.color.g + 0.0722f * dirLight.color.b;
+            // Set light intensity
+            if (args.lightEstimation.averageMainLightBrightness.HasValue) {
+                item.intensity = args.lightEstimation.averageMainLightBrightness.Value;
+            }
+
+            // Set light direction
+            if (args.lightEstimation.mainLightDirection.HasValue) {
+                item.transform.rotation = Quaternion.LookRotation(args.lightEstimation.mainLightDirection.Value);
+            }
+
+            // Optional: Set light color
+            if (args.lightEstimation.mainLightColor.HasValue) {
+                item.color = args.lightEstimation.mainLightColor.Value;
+            }
         }
     }
 }
